@@ -1,0 +1,126 @@
+body {
+    font-family :'raleway',sans serif;
+    max-width:    1440px;
+    height:       1884px;
+    margin:       0;
+    padding:      0;
+
+}
+
+/*EXPLICATIONS DE LA HAUTEUR du HEADER
+Ces 2 éléments enfants sont centrés verticalement.
+
+     
+Demi hauteur au niveau de la nav :
+= demi hauteur de la nav +top donné = 19/2 + 48 = 57,50px.
+ Il faut enlever les 2px du rectangle bleu  qui apparait au survol d'hébergement.
+On a donc = 57,5 -2 = 55,50 px 
+
+Demi hauteur au niveau  du logo = 
+Demi-hauteur du logo  + top donné  = 29/2 + 44 = 58,50px -1px de padding-Top de l'image 
+- 2px du rectangle bleu = 55,50px
+
+On a donc une hauteur du HEADER de = 55,5 *2 =111px.
+
+
+EXPLICATION DU POSITIONNEMENT DES 2 ELEMENTS DE LA NAV
+
+J'ai defini le positionnement et les largeurs d'hebergements et d activités en fonction du 
+positionnement et de la largeur du rectangle bleu.
+
+La largeur d'hébergements correspond à la largeur du rectangle bleu =162px.
+Le bloc activité est collé au bloc hébergements
+La largeur d''activités est
+=largeur maximale-left rectangle bleu -largeur rectangle bleu-right d'activités 
+=1440-1092-162-77 = 109px.
+
+
+CALCUL DU PADDING-RIGHT D'HEBERGEMENTS :
+
+1  Calcul de l'écart initial  entre les textes activités et hébergements : 
+   =largeur totale-left hébergements initial -largeur herbergements initiale -largeur activités initiale
+-right activités 
+   =1440-1120-113-63-77 = 67px
+
+2  Calcul de l'écart  entre activités et rectangle bleu :
+ =Largeur activités-largeur activités initiale
+   109-63= 46
+
+donc padding-right d'hébergements : 67-46 = 21px*/
+
+
+/*---------------------HEADER---------------------------*/
+
+header,.hebergements,nav,.activites, nav a {
+         display:flex;
+
+}
+
+header,.nav,.hebergements,.activites {
+          height:111px;
+
+}
+
+
+header {
+          justify-content: space-between;
+          align-items:     center;
+          width:           auto;  
+          top:             0px;
+          margin-left:     55px;
+          margin-right:    77px;
+
+} 
+
+
+    .logo {
+            width:       61px;
+            height:      29px;
+            padding-top: 1px;
+     }
+
+
+/*--HEADER------NAV--tout à Droite------*/
+     nav {      
+            justify-content: end;
+            align-items:     center;
+            width:           272px;
+    
+     }
+  
+           .hebergements {
+            justify-content: end;
+            align-items:     center;
+            width:           162px;
+            padding-right:   21px;
+
+          }
+
+          .activites {
+            justify-content: end;
+            align-items:     center;
+            width:           109px;
+
+          }
+
+    nav  a {
+            text-decoration: none;
+            color:         black;
+            font-weight:     500;
+            font-size:       16px;
+            border-top:      2px solid #f7f9fa;
+            margin-top:      2px;
+    
+     }
+
+     nav  a:hover {
+            cursor:            default;
+            color:           #0069FC;
+            border-top-color:#0069FC;
+            
+      }
+
+         
+
+          
+          

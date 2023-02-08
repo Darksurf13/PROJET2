@@ -1,76 +1,42 @@
+
 body {
-    font-family :'raleway',sans serif;
-    max-width:    1440px;
-    height:       1884px;
-    margin:       0;
-    padding:      0;
+    display:        flex;
+    flex-direction: column;   
+    width:          1440px;   /* au lieu de 1440px sur la maquette  j'enlève 40px de marge à droite*/
+    height:         auto ;    /*1884px; */
+    margin:         0;
+    padding:        0;
+    font-family:    "raleway",sans serif;
 
 }
 
-/*EXPLICATIONS DE LA HAUTEUR du HEADER
-Ces 2 éléments enfants sont centrés verticalement.
-
-     
-Demi hauteur au niveau de la nav :
-= demi hauteur de la nav +top donné = 19/2 + 48 = 57,50px.
- Il faut enlever les 2px du rectangle bleu  qui apparait au survol d'hébergement.
-On a donc = 57,5 -2 = 55,50 px 
-
-Demi hauteur au niveau  du logo = 
-Demi-hauteur du logo  + top donné  = 29/2 + 44 = 58,50px -1px de padding-Top de l'image 
-- 2px du rectangle bleu = 55,50px
-
-On a donc une hauteur du HEADER de = 55,5 *2 =111px.
+a {
+   text-decoration: none;
+   color:black;
+}
 
 
-EXPLICATION DU POSITIONNEMENT DES 2 ELEMENTS DE LA NAV
-
-J'ai defini le positionnement et les largeurs d'hebergements et d activités en fonction du 
-positionnement et de la largeur du rectangle bleu.
-
-La largeur d'hébergements correspond à la largeur du rectangle bleu =162px.
-Le bloc activité est collé au bloc hébergements
-La largeur d''activités est
-=largeur maximale-left rectangle bleu -largeur rectangle bleu-right d'activités 
-=1440-1092-162-77 = 109px.
 
 
-CALCUL DU PADDING-RIGHT D'HEBERGEMENTS :
-
-1  Calcul de l'écart initial  entre les textes activités et hébergements : 
-   =largeur totale-left hébergements initial -largeur herbergements initiale -largeur activités initiale
--right activités 
-   =1440-1120-113-63-77 = 67px
-
-2  Calcul de l'écart  entre activités et rectangle bleu :
- =Largeur activités-largeur activités initiale
-   109-63= 46
-
-donc padding-right d'hébergements : 67-46 = 21px*/
-
-
-/*---------------------HEADER---------------------------*/
-
+/* regroupements */
 header,.hebergements,nav,.activites, nav a {
-         display:flex;
-
+   display:flex;
 }
 
 header,.nav,.hebergements,.activites {
-          height:111px;
-
+    height:111px;
 }
 
 
+
+
+/*---------------------------------------------------HEADER------------------------------------------------------*/
+
 header { 
-          
-      
           justify-content: space-between;
           align-items:     center;
-          width:           auto;  
-          
           margin-left:     55px;
-          margin-right:    77px;
+          margin-right:    54px;  /* 77 - ((109-63) / 2 = 23) */
 
 } 
 
@@ -79,15 +45,20 @@ header {
             width:       61px;
             height:      29px;
             padding-top: 1px;
+
      }
+
+         img {
+             width:100%;
+
+          }
 
 
 /*--HEADER------NAV--tout à Droite------*/
      nav {      
-            justify-content: end;
             align-items:     center;
-            width:           272px;
-    
+            width:           272px; 
+
      }
   
            .hebergements {
@@ -100,8 +71,8 @@ header {
           .activites {
             justify-content: center;
             align-items:     center;
-            width:           162px;
-
+            width:           109px; /* 186 -77 */
+         
           }
 
     nav  a {
@@ -117,184 +88,681 @@ header {
      nav  a:hover {
             cursor:            default;
             color:           #0069FC;
-            border-top-color:#0069FC;
-            
+            border-top-color:#0069FC; 
       }
 
 
 
-/*----------------Partie 2 FILTRES---------------------------------*/
-.FILTRES{ /*----section FILTRES----*/
-   position:       absolute;
-   top:            126px;
-   left:           55px;
-   display:        flex;
-   flex-direction: column;
-   justify-content:;
-   align-items:    flex-start;
-   height:         261px; /* 1732-1497 */
-   width:          auto;
+/*---------------------------------------Partie 2 FILTRES--------------------------------------------------*/
+.partiefiltres{ /*----section FILTRES----*/
+   display:               flex;
+   flex-direction:        column;
+   align-items:           flex-start;
+   height:                261px;  /* 1732-1497 */
+   margin-top:            15px;   /* 126 -111 */
+   margin-left:           55px;
 
  }   
  
 
-   h1 {
-      margin:     0px;
-      font-weight:700;
-      font-size:  22px;
-      line-height:26px;
+   h1 {  /* Trouver un hébergement pour des vacances de reve */
+      margin:      0px;
+      line-height: 26px;
+      font-size:   22px;
+      font-weight: 700;
+      
+   }
 
-}
 
-
-   h2 {
+   h2 { /* En plein centre ville ou en pleine nature */
       margin-top:    8px;
       margin-bottom: 0px;
-      font-weight:   400;
-      font-size:     19px;
       line-height:   19px;
+      font-size:     19px;
+      font-weight:   400;
    
+    }
+
+
+
+/*---InputMainLocation- Barre de recherche--*/
+.blocinput {
+   display:    flex;
+   margin-top: 20px;
+
 }
 
+.inputmainlocation {
+   display:         flex;
+   justify-content: space-between;
+   align-items:     center;
+   height:          49px;
+   border:          1px solid #F2F2F2;
+   border-radius:   25px 15px 15px 25px;
 
-/*---InputMainLocation---*/
-.InputMainLocation {
-   margin-top:     20px;
-   display:        flex;
-   flex-direction: raw;
-   justify-content:space-between;
-   align-items:    center;
-   width:          418px;  /* 332px avec la loupe : avec rechercher :159-49=110 de plus =332 +110=442 */
-   height:         49px;
-   border:         1px solid #F2F2F2;
-   border-radius:  25px 15px 15px 25px;
- 
 }
 
-   .ConteneurLoupe {
-      width:         50px;
-      height:        49px;
-      border-radius: 15px 0px 0px 15px;
+   .conteneurlocation {
+      display:           flex;
+      justify-content:   center;
+      align-items:       center;
+      width:             50px;
+      height:            49px;
+      border-radius:     15px 0px 0px 15px;
       background-color:#F2F2F2;
+      
+   }
+
+
+   .formulaire {
+      display:      flex;
+      width:        233px; /* 414-50-132+232 plutot 232-50-49=233 */
+      padding-left: 17px;
+
+   }
+
+       .marseille {    /*div du milieu : Marseille, France*/
+           width:auto;
+           height:21px;
+           font-size:    18px;
+           font-weight:  700;
+           border:       none;
+           padding-left: 0;
+
+      }
+
+             input::placeholder {
+                          color:black;
+                          opacity:1;
+                                }
+
+
+   .fa-location-dot  { /*icon billet vague */
+      width:  14px;
+      height: 18px;
    
    }
 
-   p { /* lageur entre ConteneurLoupe et ButtonSearch :418-50-132 =236 : /2= 118*/
-      font-weight:  700;
-      font-size:    18px;
-      line-height:  21px;
-      width:       ;
-      margin-left: 17px;
-      border:      1px solid black;
-   }
+  
 
-   .ButtonSearch {
+   .buttonsearch {
+     /* visibility:hidden;*/
       display:           flex;
       justify-content:   center;
       align-items:       center;
       width:             132px;
       height:            49px;
-      font-weight:       700;
-      font-size:         18px;
-      line-height:       21px;
-      color:           #FFFFFF;
+      margin-left:       -50px;
       background-color:#0065FC;
+      color:           #FFFFFF;
       border-radius:     0px 15px 15px 0px;
-     
-
+      line-height:       21px;
+      font-size:         18px;
+      font-weight:       700; 
+      
    }
-/*
-Marseille,France  
-  
-Rechercher */
 
-a {
-   text-decoration: none;
-   color:           black;
-}
 
+   .buttonsearchloupe {
+           display:          flex;
+           justify-content:  center;
+           align-items:       center;
+           width:             49px;
+           height:            49px;
+           background-color:#0065FC;
+           border:            1px solid #0065FC;
+           border-radius:     0px 15px 15px 0px;
+           
+      
+   }
+
+   
+/*icon loupe */
+   .fa-magnifying-glass {
+      font-size: 17px;
+      width:     17px;
+      height:    17px;
+      color:   #FFFFFF;
+     
+   }  
 
 
 /*---FilteerBar---*/
-.FilterBar {
-   margin-top:     32px;
-   display:        flex;
-   flex-direction: raw;
-   justify-content:space-between;
-   align-items:    center;
-   width:          914px;
-   height:         48px; /* 50  ?? */
-  
+.filterbar {
+   display:         flex;
+   justify-content: space-between;
+   align-items:     center;
+   width:           914px;  /* Lageur totale-right animaux autorisés-left filtres =1440-464-62 = 914px */
+   height:          48px; /* 50  ?? */
+   margin-top:      32px;
+   
+            }
+
+.filterbar a {
+   text-decoration:none;
 }
+
 
    .filtres{
       width:       54px;
       height:      21px;
-      font-weight: 700;
-      font-size:   18px;
       line-height: 21px;
+      font-size:   18px;
+      font-weight: 700;
+      
    }
 
    .filtres2 {
-      display:       flex;
-      flex-direction:flex-start;
-      align-items:   center;
-      height:        40px;
-      border:        2px solid #D9D9D9; /* ???????????? */
-      font-weight:   700;
-      font-size:     17px;
-      line-height:   20px;
-      border-radius: 25px;
-      padding-right: 20px;   
-    
+      display:           flex;
+      align-items:       center;
+      height:            40px;
+      border:            2px solid #D9D9D9; 
+      border-radius:     25px;
+      background-color:#FFFFFF;
+      color :          black;
+      
    }
 
-   .CarreIcon {
-      width:       22px;
-      height:      22px;
-      border:      1px solid black;
-      margin-left: 20px;
-      margin-right:10px;
+       .filtres2:hover {
+          cursor:             default;
+          background-color: #DEEBFF;
+
+       }
+
+
+
+       .carreicon {
+         display:         flex;
+         justify-content: center;
+         align-items:     center;
+         width:           22px;
+         height:          22px;
+         margin-left:     20px;
+         margin-right:    10px;
    
+      }
+
+    
+    
+
+   /* P2  : icon font awesome */
+   .fa-info {
+      color:   #0065FC;
+      font-size: 10px;
+
    }
-/*
-img 
-.TextFiltres  
-p1   */
+   
+   .fa-money-bill-wave {
+      color:   #0065FC;
+      font-size: 22px;
+
+   }
+   
+   .fa-person {
+      color:   #0065FC;
+      font-size: 22px;
+
+   }
+
+   .fa-heart {
+      color:   #0065FC;
+      font-size: 22px;
+
+   }
+
+   .fa-dog {
+      color:   #0065FC;
+      font-size: 22px;
+
+   }
+
+/* fin P2   : icon font awesome */
+
+.textfiltres { 
+   margin-right: 20px;
+   line-height:  21px;
+   font-size:    17px;
+   font-weight:  700;
+
+}
+  
       
 
-/*---Infobar---*/
-.Infobar {
-   margin-top:     40px;
+/*---Infobar--plus de 500 logements-*/
+.infobar { /* */
    display:        flex;
-   flex-direction: flex-start;
-   justify-content:flex-start;
+   justify-content:start;
    align-items:    center;
    width:          447px;
    height:         19px; 
+   margin-top:     40px;
 
 }
 
-   .Ellipse {
-      width:     24px;
-      height:    24px;
-      border:    1px solid Grey;   /*     D9D9D9 */
-      border-radius:50px;
+   .ellipse {
+      display:         flex;
+      justify-content: center;
+      align-items:     center;
+      width:           24px;
+      height:          24px;
+      margin-right:    11px;
+      border:          1px solid #D9D9D9;   
+      border-radius:   50px;
+
    }
 
    h3 {
-      margin:     0px;
-      margin-left:25px;
-      font-weight: 400;
       font-size:   16px;
+      font-weight: 400;
       line-height: 19px;
+
    }
 
-   /* img src=  */
 
-/*----------------Partie 3 FILTRES---------------------------------*/
-/*----------------Partie 4 FILTRES---------------------------------*/
-/*----------------Partie 5 FILTRES---------------------------------*/
+
+
+/*---------------------------Partie 3 hebergements à Marseille et les plus populaires-----------------------*/
+.partieoffers {
+   display:         flex;
+   justify-content: space-between;
+   align-items:     center;
+   width:           1300px; /* 1440 -50 -50 ou 880 + 40 + 420  */ /*-40*/
+   height:          625px;  /* 1884 - 427 - 832 */
+   margin-top:      77px; /* top section offers - top section filtres =426-368+19 */
+   margin-left:     50px;
+   margin-right:    50px;
+   
+}
+
+
+/*------------------------*/
+
+.fa-star {
+   margin-right: 2px;
+   font-size:12px;      
+}
+
+   .fa-star:nth-child(-n+4) { /* 4 premières étoiles bleues */
+      color:#0065FC;
+   }
+
+   .fa-star:nth-child(n+5) {  /* dernière étoile grise */
+      color:grey;
+      }  
+
+      /*---------------*/
+   
+
+/*-----P3---GRANDE SECTION-------- */
+     
+   /* SECTION à gauche 65% */
+   .offersmain {
+      display:           flex;
+      flex-direction:    column;
+      width:             880px; /* 880-40*/
+      height:            626px;
+      border-radius:     20px;
+      background-color:#F2F2F2;
+      
+
+   }
+
+      .titrehebergements {
+            width:      800px;  /* 880-40*/
+            height:      91px;
+            margin-left: 40px;
+            margin-right:40px;
+            
+      }
+      
+      h4 { /*Hébergements à Marseille* et Les plus populaires */
+            margin-top:    42px;
+            margin-bottom: 23px;
+            line-height:   26px;  
+            font-size:     22px;
+            font-weight:   700;
+            
+      }
+      
+      .troiscards {
+           display:         flex;
+           justify-content: space-between;
+           width:           800px;  /* 880-40*/
+           height:          199px;
+           margin-bottom:   30px;
+           margin-left:40px;
+           margin-right:40px;
+           
+      }
+           /* CARTE */
+           .cardmain {
+              display:           flex;
+              flex-direction:    column;
+              align-items:       center; /* alignement vertical */
+              width:             256px;
+              height:            199px;
+              border-radius:     20px;
+              background-color:#FFFFFF;
+              box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+              
+           }
+
+            
+               .imagemain {
+                   display:           flex;
+                   width:             236px;    /* 246-10 de bordure*/
+                   height:            114px;   /* 124-10 de bordure*/
+                   border:            5px solid #FFFFFF;
+                   border-radius:     20px 20px 0px 0px;
+                   background-color:#F2F2F2;
+                   overflow:          hidden;
+                   
+               }
+
+       
+                  .euro {
+                      font-size:  14px;
+                      font-weight:600;
+                        }
+
+                 /* description de la carte */
+               .descriptionmain {
+                display:        flex;
+                flex-direction: column;
+                width:          246px;
+                height:         75px; /* 199-124  */
+                padding-left:   16px;
+            
+               }
+              
+                  .titrecardmain {
+                      margin-top:  4px;
+                      line-height: 18.78px;
+                      font-size:   16px;
+                      font-weight: 700;
+                      
+                  }     
+
+                  .prixcardmain {
+                      margin-top:  4px;
+                      line-height: 16.44px;
+                      font-size:   14px;
+                      font-weight: 400;
+                     
+                  }
+
+                  .etoilecardmain {
+                      display:    flex;
+                      margin-top: 9px;
+                      height:     12px;
+                     
+                  }
+
+
+               .afficherplus {  /* Afficher plus */
+                   margin-left:  40px;
+                   margin-top:10px;   /* 30 de m-b de "cards +10 pour faire 40 */
+                   margin-bottom:46px;
+                   line-height:  21.13px;
+                   font-size:    18px;
+                   font-weight:  700;
+
+                }
+      
+
+   
+   /* SECTION à Droite 32% OFFERS SPONSORED */
+   .offerssponsored {
+       display:           flex;
+       flex-direction:    column;
+       width:             420px; /* 420 - 37 -40 */
+       height:            625px;
+       margin-left:       40px;
+       border-radius:     20px;
+       background-color:#F2F2F2;
+
+   }
+
+   
+      .grostitresponsored {
+          display:         flex;
+          justify-content: space-between;
+          align-items:     center;
+          width:           343px; /*420 -37*/
+          height:          93px;
+          margin-left:     37px;
+          margin-right:    40px;
+      
+      }
+      
+          .eclairicon {
+            width:         18px;
+            height:        15.75px;
+            margin-top:    42px;
+            margin-bottom: 23px;
+         
+          }
+
+          .fa-chart-line {
+            color: #0065FC;
+            width:  18px;
+            height: 15.75px;
+            border: 1px solid black;
+          }
+
+
+      .cardsponsored {
+          display:           flex;
+          width:             343px;
+          height:            144px;
+          margin-bottom:     33px;
+          margin-left:       37px;
+          margin-right:      40px;
+          border-radius:     20px 0px 0px 20px;
+          background-color:#FFFFFF;
+          box-shadow:       0 3px 15px 0 rgba(0, 0, 0, 0.1);
+          overflow:        hidden;
+      
+      }
+
+          .imagesponsored {
+              display:       flex;
+              width:         127px;   /*137-5-5 */
+              height:        134px;   /*144-5-5 */
+              border:        5px solid #FFFFFF;
+              border-radius: 20px 0px 0px 20px;
+              overflow:      hidden;
+          }
+
+          
+
+          .descriptionsponsored {
+            display:        flex;
+            flex-direction: column;
+            justify-content:space-between;
+            width:          206px; /* 343 - 137 */
+            height:         132px; /*144-12 */
+            padding-left:   15px;
+            padding-bottom:12px;
+         
+          }
+              
+             .titresponsored {
+                margin-top:  16px;
+                line-height: 19px; 
+                font-size :  16px;
+                font-weight: 700;
+         
+             }
+            
+             .prixsponsored {
+               margin-top:  7px;
+               line-height: 16.44px;
+               font-size:   14px;
+               font-weight: 400;
+      
+             }
+
+             .etoilecardsponsored {
+               display: flex;
+               height:  12px;
+      
+             }
+
+
+
+/*---------------------------------------Partie 4 -----ACTIVITES-----------------------------------------*/
+.sectionactivites {
+   display:         flex;
+   flex-direction:  column;
+   justify-content: space-between;
+   height:          493px; /*30.02 + 18.47 +444.51 */
+   margin-top:      60px;
+   margin-right:    13px; /* 53-40 */
+   margin-left:     50px;
+   
+}
+
+    h5 {
+       display:      flex;
+       height:       30.02px;
+       margin-top:    0;
+       margin-bottom: 18.47px;
+       line-height:   26px;
+       font-size:     22px;
+       font-weight:   700;
+
+    }
+
+
+    .bloccardactivites {
+       display:         flex;
+       justify-content: space-between;
+       width:           1337px;
+       height:          445px;
+   
+    }
+
+         .cardactivites {
+             display:        flex;
+             flex-direction: column;
+             width:          302px;
+             height:         445px;
+             border-radius:  20px;
+             box-shadow:       0 3px 15px 0 rgba(0, 0, 0, 0.1);
+           /*  background: url(paul-hermann-QFTrLdQIRhI-unsplash.jpg); */
+         
+         }
+
+            .imageactivites {
+                display:       flex;
+                width:         302px;
+                height:        389px;
+                border-radius: 20px;
+                overflow:      hidden;
+   
+            }
+
+            .descriptionactivites {
+                display:     flex;
+                width:       283px;  /* 302-19*/
+                height:      19px; /* 20+15+21+56*/
+                margin-top:  20px;
+                margin-left: 19px;
+                font-size:   16px;
+                font-weight: 700;
+
+            }
+    
+
+
+
+/*---------------------------------------------Partie 5 FOOTER--------------------------------------------*/
+
+footer {
+   display:            flex;
+   width:              1339px;
+   margin-top:         61px;
+   margin-left:        48px;
+   background-color: #F2F2F2;
+
+}
+
+
+   .apropos {   /* le justify-content space-between s'est mis par défaut */
+       display:        flex;
+       flex-direction: column;
+       margin-left:    70px;
+       margin-top:     45px;
+       margin-bottom:  58px;
+
+   }
+
+      h6/*.titrefooter*/{
+          display:     flex;
+          margin-top:0;
+          margin-bottom:0;
+          height:      21px;
+          font-size:   18px;
+          font-weight: 700;
+
+      }
+
+      .contenufooter {
+         display:        flex;
+         flex-direction: column;
+         margin-top:     20px;
+
+      }
+
+       .textfooter {
+         display:       flex;
+         margin-bottom: 12px;
+
+       }
+
+
+
+   .noshebergements {
+       display:        flex;
+       flex-direction: column;
+       margin-top:     45px;
+       margin-left:    230px;
+
+  }
+   
+
+   .assistance {
+       display:        flex;
+       flex-direction: column;
+       margin-top:     45px;
+       margin-left:    239px;
+       margin-right:   327px;
+
+  }
+
+
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/* -------------------------------------responsive TABLETTE----------------------------------------------------- */
+  @media screen and (max-width: 992px)
+
+  {
+
+  }
+
+
+/* --------------------------------------responsive TMOBILE------------------------------------------------------ */
+  @media screen and (max-width: 768px)
+
+  {
+   .buttonsearch {
+      visibility:hidden;
+   }
+
+  }
+
+
 
           
       

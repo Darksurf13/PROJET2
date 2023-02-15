@@ -32,9 +32,13 @@ nav,
 /*---------------------------------------------------HEADER------------------------------------------------------*/
 header {
    justify-content: space-between;
+   width:92.43%;
    margin-left: 3.82%;
-   margin-right: 3.75%;
+   /*55px;*/
+   margin-right: 3.75%; 
+   /*  3.75%  54px; 77-23  (23=(109-63)/2) */
 }
+
 
 .logo {
    width: 61px;
@@ -49,28 +53,34 @@ header {
 /*--HEADER------NAV--tout à Droite------*/
 nav {
    align-items: center;
-   width: 20.72%;
+   width:271px; ; /* 271 = 162 + 109 */
+   /*20.72%; /*271px   162 + 109 
+     (109= 186-77) */
 }
 
 .hebergements {
    justify-content: center;
    align-items: center;
-   width: 100%;
+   width: 162px;
+   /*100%;*/
 }
 
 .hebergementmarseille {
-   width: 59.78%;
+   width: 162px;
+   /*59.78%;*/
    font-weight: 500;
 }
 
 .activites {
    justify-content: center;
    align-items: center;
-   width: 100%;
+   width: 109px;
+   /*100%; */
 }
 
 nav a {
-   width: 40.22%;
+   width: 109px;
+   /*40.22%;*/
 }
 
 nav a {
@@ -79,7 +89,8 @@ nav a {
    line-height: 19px;
    font-weight: 400;
    font-size: 16px;
-   border-top: 2px solid #f7f9fa;
+   border-top: 2px solid #FFFFFF;
+   /* pas besoin de margin-top 2px pour la nav */
 }
 
 nav a:hover {
@@ -217,7 +228,8 @@ input::placeholder {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 99.23%;
+   width: 914px;
+   /*99.23%;*/
    margin-top: 32px;
    margin-left: 0.77%;
 }
@@ -231,6 +243,13 @@ input::placeholder {
    height: 21px;
    font-size: 18px;
    font-weight: 700;
+}
+
+.ensemblefiltres {
+   display: flex;
+   justify-content: space-between;
+   width: 828px;
+   /* 828=914-54-32 */
 }
 
 .filtres2 {
@@ -248,7 +267,7 @@ input::placeholder {
    background-color: #DEEBFF;
 }
 
-.carreicon {
+.carreicon1 {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -257,6 +276,40 @@ input::placeholder {
    margin-left: 20px;
    margin-right: 10px;
 }
+
+.carreicon2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 13.44px;
+   height: 22px;
+   margin-left: 24px;
+   margin-right: 14.56px;
+}
+
+.carreicon3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 22px;
+   height: 18.33px;
+   margin-left: 20px;
+   margin-right: 10px;
+}
+
+.carreicon4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 22px;
+   height: 22px;
+   margin-left: 20px;
+   margin-right: 10px;
+}
+
+
+
+
 
 /* P2  : icon font awesome */
 .fa-info {
@@ -374,17 +427,20 @@ h4 {
    font-weight: 700;
 }
 
-.troiscards {
+.sixcards {
    display: flex;
+   flex-wrap: wrap;
+   align-content: space-between;
    justify-content: space-between;
    width: 90.91%;
-   height: 199px;
+   height: 428px;
+   /* 199 + 30 + 199 */
    margin-bottom: 30px;
    margin-left: 4.55%;
 }
 
 /* CARTE */
-.troiscards a {
+.sixcards a {
    display: flex;
    width: 30.75%;
 }
@@ -411,7 +467,7 @@ h4 {
 .imagemain img {
    width: 100%;
    height: 114px;
-   object-fit: fill;
+   object-fit: cover;
 }
 
 /* description de la carte */
@@ -490,13 +546,24 @@ h4 {
    height: 15.75px;
 }
 
+.bloccardsponsored {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 81.67%;
+   /*81.67%*   probleme  343px */
+   height: 498px;
+   /* 144 + 33 + 144 + 33 + 144 */
+   margin-left: 8.81%;
+}
+
 .cardsponsored {
    display: flex;
-   width: 81.67%;
+   width: 100%;
+   /*81.67% */
    height: 144px;
    margin-bottom: 33px;
-   margin-left: 8.81%;
-   border-radius: 20px 0px 0px 20px;
+   border-radius: 20px;
    background-color: #FFFFFF;
    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
    overflow: hidden;
@@ -515,7 +582,7 @@ h4 {
 .imagesponsored img {
    width: 100%;
    height: 134px;
-   object-fit: fill;
+   object-fit: cover;
 }
 
 .descriptionsponsored {
@@ -601,10 +668,12 @@ h5 {
    display: flex;
    width: 100%;
    height: 389px;
-   object-fit: fill;
+   object-fit: cover;
 }
 
-.descriptionactivites {
+.descriptionactivites,
+.descriptionactivitesb,
+.descriptionactivitesc {
    display: flex;
    margin-top: 20px;
    margin-left: 6.29%;

@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <title>PROJET 2 </title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" media="screen and (max-width: 992px)" href="tablette.css" >
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css" >
+  <link rel="stylesheet" media="screen and (max-width: 992px)" href="tablette.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -16,9 +17,11 @@
 <body>
   <!--     Partie 1 HEADER   -->
   <header>
-    <div class="logo">
-      <img src="images/logo/Booki.png" alt="">
-    </div>
+    <a href="">
+      <div class="logo">
+        <img src="images/logo/Booki.png" alt="">
+      </div>
+    </a>
     <nav>
       <a href="HébergementsàMarseille" class="hebergementmarseille">
         <div class="hebergements"> Hébergements
@@ -58,36 +61,38 @@
         <div class="filtres">
           Filtres
         </div>
-        <div class="filtres2">
-          <div class="carreicon">
-            <i class="fa-solid fa-money-bill-wave"></i>
+        <div class="ensemblefiltres">
+          <div class="filtres2">
+            <div class="carreicon1">
+              <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
+            <div class="textfiltres">
+              Économique
+            </div>
           </div>
-          <div class="textfiltres">
-            Économique
+          <div class="filtres2">
+            <div class="carreicon2">
+              <i class="fa-solid fa-person"></i>
+            </div>
+            <div class="textfiltres">
+              Familial
+            </div>
           </div>
-        </div>
-        <div class="filtres2">
-          <div class="carreicon">
-            <i class="fa-solid fa-person"></i>
+          <div class="filtres2">
+            <div class="carreicon3">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="textfiltres">
+              Romantique
+            </div>
           </div>
-          <div class="textfiltres">
-            Familial
-          </div>
-        </div>
-        <div class="filtres2">
-          <div class="carreicon">
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          <div class="textfiltres">
-            Romantique
-          </div>
-        </div>
-        <div class="filtres2">
-          <div class="carreicon">
-            <i class="fa-solid fa-dog"></i>
-          </div>
-          <div class="textfiltres">
-            Animaux autorisés
+          <div class="filtres2">
+            <div class="carreicon4">
+              <i class="fa-solid fa-dog"></i>
+            </div>
+            <div class="textfiltres">
+              Animaux autorisés
+            </div>
           </div>
         </div>
       </div>
@@ -105,7 +110,7 @@
         <div class="titrehebergements">
           <h4>Hébergements à Marseille</h4>
         </div>
-        <div class="troiscards">
+        <div class="sixcards">
           <a href="#">
             <div class="cardmain">
               <div class="imagemain">
@@ -176,8 +181,6 @@
 
             </div>
           </a>
-        </div>
-        <div class="troiscards">
           <a href="#">
             <div class="cardmain">
 
@@ -261,72 +264,74 @@
             <i class="fa-solid fa-chart-line"></i>
           </div>
         </div>
-        <a href="">
-          <div class="cardsponsored">
-            <div class="imagesponsored">
-              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-            </div>
-            <div class="descriptionsponsored">
-              <div class="titresponsored">
-                Hôtel le soleil du <br> matin
+        <div class="bloccardsponsored">
+          <a href="">
+            <div class="cardsponsored">
+              <div class="imagesponsored">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
               </div>
-              <div class="prixsponsored">
-                Nuit à partir du 128<span class="euro">€</span>
-              </div>
-              <div class="etoilecardsponsored">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="cardsponsored">
-            <div class="imagesponsored">
-              <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-            </div>
-            <div class="descriptionsponsored">
-              <div class="titresponsored">
-                Chambres d'hôtes Au <br>coeur de l'eau
-              </div>
-              <div class="prixsponsored">
-                Nuit à partir du 71<span class="euro">€</span>
-              </div>
-              <div class="etoilecardsponsored">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+              <div class="descriptionsponsored">
+                <div class="titresponsored">
+                  Hôtel le soleil du <br> matin
+                </div>
+                <div class="prixsponsored">
+                  Nuit à partir du 128<span class="euro">€</span>
+                </div>
+                <div class="etoilecardsponsored">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="cardsponsored">
-            <div class="imagesponsored">
-              <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+          </a>
+          <a href="">
+            <div class="cardsponsored">
+              <div class="imagesponsored">
+                <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+              </div>
+              <div class="descriptionsponsored">
+                <div class="titresponsored">
+                  Chambres d'hôtes Au <br>coeur de l'eau
+                </div>
+                <div class="prixsponsored">
+                  Nuit à partir du 71<span class="euro">€</span>
+                </div>
+                <div class="etoilecardsponsored">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
             </div>
-            <div class="descriptionsponsored">
-              <div class="titresponsored">
-                Hotel Bleu et Blanc
+          </a>
+          <a href="">
+            <div class="cardsponsored">
+              <div class="imagesponsored">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
               </div>
-              <div class="prixsponsored">
-                Nuit à partir du 68<span class="euro">€</span>
-              </div>
-              <div class="etoilecardsponsored">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+              <div class="descriptionsponsored">
+                <div class="titresponsored">
+                  Hotel Bleu et Blanc
+                </div>
+                <div class="prixsponsored">
+                  Nuit à partir du 68<span class="euro">€</span>
+                </div>
+                <div class="etoilecardsponsored">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </section>
     <!--     Partie 4 SECTION ACTIVITES     -->
@@ -360,7 +365,7 @@
             <div class="imageactivites">
               <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
             </div>
-            <div class="descriptionactivites">
+            <div class="descriptionactivitesb">
               Parc National des Calanques
             </div>
           </div>
@@ -370,7 +375,7 @@
             <div class="imageactivites">
               <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
             </div>
-            <div class="descriptionactivites">
+            <div class="descriptionactivitesc">
               Notre-Dame-de-la-Garde
             </div>
           </div>

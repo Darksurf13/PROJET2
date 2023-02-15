@@ -1,0 +1,325 @@
+body {
+    max-width: 767px;
+    height: auto;
+    /*4113px  plus de (5013 */
+}
+
+.buttonsearch {
+    visibility: hidden;
+    /*ou display:none */
+}
+
+header {
+    flex-direction: column;
+    width: 100%;
+    /*375px; */
+    height: 132px;
+    /* 129 + 3 */
+    margin: 0;
+}
+
+nav,
+.hebergements,
+.activites {
+    height: 63.53px;
+    /* 63.53 = 23.09 + 17.35 + 23.09 */
+}
+
+.logo {
+    margin-top: 21px;
+    margin-left: 41.87%;
+    /*157px;*/
+}
+
+nav {
+    margin-bottom: 3px;
+}
+
+.hebergements,
+.activites {
+    width: 100%;
+    /*187px;*/
+}
+
+
+.hebergementmarseille {
+    /* le a d'hébergements */
+    width: 49.87%;
+    /*187%;*/
+    font-weight: 500;
+}
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    width: 50.13%;
+    /*188px; */
+    border-top: 0;
+    border-bottom: 3px solid #FFFFFF;
+    /* 375px */
+}
+
+nav a:hover {
+    border-bottom-color: #0069FC;
+}
+
+/*---------------------------------------Partie 2 FILTRES--------------------------------------------------*/
+
+.partiefiltres {
+    width: 89.07%;
+    /* 100% - 5.33%- 5.60% */
+    height: 456px;
+    margin-left: 5.33%;
+    /* 20px */
+    margin-right: 5.60%;
+    /* 21px */
+    ;
+    margin-bottom: 17px;
+}
+
+h1,
+h2 {
+    margin-left: 2px;
+    /* 20px*/
+    width: 89%;
+    /*79.47% ;/*298px;  j'ai tatonné*/
+}
+
+h2 {
+    margin-top: 13px;
+
+}
+
+.blocinput {
+    /*width:auto; /* se colle à la paroi du parent */
+    margin-left: 0.53%;
+    /*2px*/
+    margin-top: 34px;
+}
+
+.filterbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 89.07%;
+    /*334px = 375 - 20 - 21 */
+}
+
+.filtres {
+    height: 55px;
+}
+
+.ensemblefiltres {
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 15px;
+    margin-left: 0;
+    width: 110.93%;
+    /*110.93%= 100% +5.33% + 5.60%  */
+    height: 117px;
+    /*50 + 17 + 50 */
+}
+
+.filtres {
+    height: 21px;
+}
+
+.filtres2 {
+    height: 50px;
+    width: 47.43%;
+    /*   156=160px -2-2*  158.4% : j'ai mis plus grand pour que tout le texte d'animaux autorisés soit sur une seule ligne*/
+}
+
+
+.infobar {
+    display: flex;
+    align-items: flex-start;
+    height: 57px;
+    margin-top: 43px;
+    margin-bottom: 17px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+
+.textfiltres {
+    display: flex;
+    margin-right: 20px;
+    line-height: 12.91px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.carreicon1 {
+    width: 21px;
+    height: 14.78px;
+    margin-left: 13px;
+    margin-right: 5px;
+}
+
+.carreicon2 {
+    width: 13.44px;
+    height: 22px;
+    margin-left: 17px;
+    margin-right: 8.56px;
+}
+
+.carreicon3 {
+    width: 22px;
+    height: 18.33px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.carreicon4 {
+    width: 21px;
+    height: 20px;
+    margin-left: 13px;
+    margin-right: 4px;
+}
+
+.fa-dog {
+    font-size: 21px;
+}
+
+/*---------------------------Partie 3 hebergements à Marseille et les plus populaires-----------------------*/
+.partieoffers {
+    height: 1905px;
+    /*2200px; */
+    width: 100%;
+    /*374px*/
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+.offerssponsored {
+    flex-direction: column;
+    margin-top: 0;
+    width: 100%;
+    /*375px*/
+    height: 580px;
+    /*700px;*/
+}
+
+.grostitresponsored {
+    margin-left: 5.33%;
+    /*20px*/
+    margin-right: 21px;
+}
+
+.bloccardsponsored {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    width: 89.07%;
+    /*100-5.33 - 5.60 */
+    margin-left: 5.33%;
+    /*20px*/
+    margin-right: 5.60%;
+    /*21px*/
+    height: 453px;
+    /* 144 *3 +10 + 11 */
+    ;
+}
+
+.cardsponsored {
+    width: 100%;
+    /* 89.07%- 5.33%   334px */
+    margin: 0;
+}
+
+.offersmain {
+    height: 1325px;
+    margin-top: 17px;
+    background-color: #FFFFFF;
+}
+
+.afficherplus {
+    display: none;
+}
+
+.sixcards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 0;
+    height: 1254px;
+    /* 199+12+199+12+199+12+199+12+199+12+199 */
+    margin-bottom: 12px;
+}
+
+.sixcards a {
+    width: 100%;
+}
+
+/*---------------------------------------Partie 4 -----ACTIVITES-----------------------------------------*/
+.sectionactivites {
+    justify-content: flex-start;
+    width: 100%;
+    /*375px*/
+    height: 886px;
+    /* 54+190+24+190+24+190+24+190 */
+    margin-top: 105px;
+    /* 105-12 */
+    margin-left: 0;
+}
+
+.sectionactivites a {
+    width: 100%;
+}
+
+.bloccardactivites {
+    flex-direction: column;
+    height: 832px;
+    margin-top: 0;
+}
+
+.cardactivites {
+    height: 190px;
+}
+
+.imageactivites img {
+    height: 134px;
+ }
+
+h5 {
+    width: 120px;
+    height: 54px;
+    /* 30.02 + 23.98 */
+    margin-bottom: 0;
+}
+
+/*---------------------------------------------Partie 5 FOOTER--------------------------------------------*/
+
+footer {
+    margin-top: 80px;
+    margin-left: 0;
+    width: 100%;
+    /*375px;*/
+    height: 550px;
+    flex-direction: column;
+}
+
+.apropos {
+    margin-left: 8%;
+    /*30px*/
+
+}
+
+.noshebergements {
+    margin-top: 40px;
+    margin-left: 8.80%;
+    /*33px*/
+}
+
+.assistance {
+    margin-top: 51px;
+    margin-left: 8.80%;
+    /*33px*/
+}

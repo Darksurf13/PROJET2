@@ -1,22 +1,27 @@
 body {
-    max-width: 991px;
-    height: auto; /*2076px;*/
+    max-width: 992px;
+    height: 2076px;
+    /* 2076px */
 }
 
-/*----------l'écran fait 1024-----------------992--------------------HEADER------------------------------------------------------*/
+/*---l'écran fait 1024px sur la maquette---------------HEADER------------------------------------------------------*/
 
 header {
-    /*width: 1024 -72-77:875 */
-    margin-left: 72px;
-    margin-right: 72px;
-    /*width: 875px;   */
+    margin-left: 7.03%;
+    /* 72px */
+    margin-right: 4.88%;
+    /*50px = 54 +1 (1px de plus entre hébergements et activités) - 5 (on passe de 77 à 72)*/
 }
 
 /*---------------------------------------Partie 2 FILTRES--------------------------------------------------*/
 
 .partiefiltres {
-    width: 82.64%;
-    /*846px;/*%;*/
+    width: 82.62%;
+    /* 846px = 1024 - 72 - 72 */
+    margin-left: 7.03%;
+    /* 72px */
+    margin-right: 7.03%;
+    /* 72px */
 }
 
 .blocinput {
@@ -24,9 +29,12 @@ header {
 }
 
 .filterbar {
-    width: 100%;
-    /*846px;/*%;*/
     margin-left: 0;
+    width: 100%;
+}
+
+.filtres {
+    margin-right: 17px;
 }
 
 .infobar {
@@ -38,14 +46,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 93.03%;
-    /*93.06%  800px; */
+    width: 85.94%;
+    /*93.06%  800px*/
     height: 957px;
     /* 957 = 626 + 53 + 278 */
     margin-left: 7.03%;
-    /*72px;*/
+    /*72px*/
     margin-right: 7.03%;
-    /*72px;*/
+    /*72px*/
 }
 
 .offersmain {
@@ -69,15 +77,25 @@ header {
 
 .bloccardsponsored {
     flex-direction: row;
-    width: 802px;
+    width: 90.83%;
+    /* 802px */
     /*252+23+252+23+252 */
     height: 144px;
     margin-left: 40px;
 }
 
+.bloccardsponsored a {
+    width: 30%;
+}
+
 .cardsponsored {
-    border: 1px solid black;
-    width: 252px;
+    width: 100%;
+    /*252px;*/
+}
+
+.cardsponsored a {
+    display: flex;
+    /*width: 30.75%*/
 }
 
 /*---------------------------------------Partie 4 -----ACTIVITES-----------------------------------------*/
@@ -85,30 +103,30 @@ header {
 .sectionactivites {
     margin-top: 70px;
     height: 331px;
-    /* 30 + 34 + 267  */
-    width: 878px;
-    /*1024-73 - 73 */
+    /* 30+34+267 */
+    width: 85.94%;
+    /* 880px */
+    /* 1024-73-73 */
     margin-left: 73px;
     /* le bloc est centré */
 }
 
 h5 {
+    /* Activités à Marseille */
     margin-bottom: 34px;
 }
 
 .cardactivites {
-    width: 100%px;
+    width: 334px;
     height: 267px;
 }
 
 .imageactivites {
-    height: 212px;
-    /* 229-9 */
+    height: 211px;
 }
 
 .bloccardactivites {
     width: 100%;
-    /* 1024-73-73 */
 }
 
 .descriptionactivitesb,

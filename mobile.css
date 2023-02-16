@@ -1,18 +1,16 @@
 body {
-    max-width: 767px;
-    height: auto;
-    /*4113px  plus de (5013 */
+    max-width: 768px;
+    height: 4113px;
 }
 
 .buttonsearch {
     visibility: hidden;
-    /*ou display:none */
 }
 
 header {
     flex-direction: column;
     width: 100%;
-    /*375px; */
+    /*375px*/
     height: 132px;
     /* 129 + 3 */
     margin: 0;
@@ -28,7 +26,7 @@ nav,
 .logo {
     margin-top: 21px;
     margin-left: 41.87%;
-    /*157px;*/
+    /*157px*/
 }
 
 nav {
@@ -38,14 +36,13 @@ nav {
 .hebergements,
 .activites {
     width: 100%;
-    /*187px;*/
+    /*187px*/
 }
-
 
 .hebergementmarseille {
     /* le a d'hébergements */
     width: 49.87%;
-    /*187%;*/
+    /*187%*/
     font-weight: 500;
 }
 
@@ -55,10 +52,10 @@ nav {
 
 nav a {
     width: 50.13%;
-    /*188px; */
+    /*188px*/
     border-top: 0;
     border-bottom: 3px solid #FFFFFF;
-    /* 375px */
+    /*375px*/
 }
 
 nav a:hover {
@@ -71,11 +68,11 @@ nav a:hover {
     width: 89.07%;
     /* 100% - 5.33%- 5.60% */
     height: 456px;
+    margin-top: 31px;
     margin-left: 5.33%;
     /* 20px */
     margin-right: 5.60%;
     /* 21px */
-    ;
     margin-bottom: 17px;
 }
 
@@ -89,11 +86,9 @@ h2 {
 
 h2 {
     margin-top: 13px;
-
 }
 
 .blocinput {
-    /*width:auto; /* se colle à la paroi du parent */
     margin-left: 0.53%;
     /*2px*/
     margin-top: 34px;
@@ -103,7 +98,7 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     width: 89.07%;
-    /*334px = 375 - 20 - 21 */
+    /* 334px = 375 - 20 - 21 */
 }
 
 .filtres {
@@ -116,9 +111,9 @@ h2 {
     margin-top: 15px;
     margin-left: 0;
     width: 110.93%;
-    /*110.93%= 100% +5.33% + 5.60%  */
+    /* 110.93%= 100% +5.33% + 5.60%  */
     height: 117px;
-    /*50 + 17 + 50 */
+    /* 50 + 17 + 50 */
 }
 
 .filtres {
@@ -127,23 +122,10 @@ h2 {
 
 .filtres2 {
     height: 50px;
-    width: 47.43%;
-    /*   156=160px -2-2*  158.4% : j'ai mis plus grand pour que tout le texte d'animaux autorisés soit sur une seule ligne*/
+    width: 48.3%;
+    /* 156px = 160-2-2. J'ai mis 161.33px :
+    j'ai mis un peu plus grand pour que tout le texte d'animaux autorisés se mette sur une seule ligne */
 }
-
-
-.infobar {
-    display: flex;
-    align-items: flex-start;
-    height: 57px;
-    margin-top: 43px;
-    margin-bottom: 17px;
-}
-
-h3 {
-    margin-top: 0;
-}
-
 
 .textfiltres {
     display: flex;
@@ -161,41 +143,56 @@ h3 {
 }
 
 .carreicon2 {
-    width: 13.44px;
     height: 22px;
     margin-left: 17px;
     margin-right: 8.56px;
 }
 
 .carreicon3 {
-    width: 22px;
-    height: 18.33px;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 4px;
 }
 
 .carreicon4 {
     width: 21px;
     height: 20px;
     margin-left: 13px;
-    margin-right: 4px;
+    margin-right: 5px;
 }
 
 .fa-dog {
     font-size: 21px;
 }
 
+.infobar {
+    display: flex;
+    align-items: flex-start;
+    height: 60px;
+    /* 57 + 3 : les 3px qui dépasse de l'icone */
+    margin-top: 40px;
+    /* on enlève les 3px qui dépassent de l'icone */
+}
+
+h3 {
+    /* Plus de 500 logements sont disponibles dans cette ville */
+    margin-top: 3px;
+}
+
 /*---------------------------Partie 3 hebergements à Marseille et les plus populaires-----------------------*/
 .partieoffers {
-    height: 1905px;
-    /*2200px; */
-    width: 100%;
-    /*374px*/
-    margin-top: 0px;
-    margin-left: 0;
-    margin-right: 0;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    width: 100%;
+    /*374px*/
+    height: 1905px;
+    /*2200px*/
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.titrehebergements {
+    margin: 0;
 }
 
 .offerssponsored {
@@ -204,28 +201,37 @@ h3 {
     width: 100%;
     /*375px*/
     height: 580px;
-    /*700px;*/
+    /*700px*/
 }
 
 .grostitresponsored {
+    height: 80px;
+    /* 28+26+26 */
     margin-left: 5.33%;
     /*20px*/
-    margin-right: 21px;
+    margin-right: 5.60%;
+    padding-top: 2px;
+    /* 26 + 2 */
+}
+
+h4 {
+    margin-top: 26px;
+}
+
+.eclairicon {
+    height: 14.38px;
+    margin-top: 35px;
 }
 
 .bloccardsponsored {
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    width: 89.07%;
-    /*100-5.33 - 5.60 */
-    margin-left: 5.33%;
-    /*20px*/
-    margin-right: 5.60%;
-    /*21px*/
     height: 453px;
-    /* 144 *3 +10 + 11 */
-    ;
+    /* 144+11+144+10+144*/
+    margin-left: 20px;
+}
+
+.bloccardsponsored a {
+    width: 100%;
 }
 
 .cardsponsored {
@@ -234,10 +240,17 @@ h3 {
     margin: 0;
 }
 
+/*offermain*/
 .offersmain {
+    margin-left: 5.33%;
+    margin-right: 5.60%;
     height: 1325px;
-    margin-top: 17px;
+    width: 89.07%;
     background-color: #FFFFFF;
+}
+
+.titrehebergements {
+    height: 71px;
 }
 
 .afficherplus {
@@ -261,13 +274,16 @@ h3 {
 /*---------------------------------------Partie 4 -----ACTIVITES-----------------------------------------*/
 .sectionactivites {
     justify-content: flex-start;
-    width: 100%;
+    width: 89.06%;
     /*375px*/
     height: 886px;
     /* 54+190+24+190+24+190+24+190 */
     margin-top: 105px;
     /* 105-12 */
-    margin-left: 0;
+    margin-left: 5.07%;
+    /*19px*/
+    margin-right: 5.87%;
+    /*22px*/
 }
 
 .sectionactivites a {
@@ -286,7 +302,7 @@ h3 {
 
 .imageactivites img {
     height: 134px;
- }
+}
 
 h5 {
     width: 120px;
@@ -295,21 +311,35 @@ h5 {
     margin-bottom: 0;
 }
 
+.descriptionactivites,
+.descriptionactivitesb,
+.descriptionactivitesc {
+    display: flex;
+    align-items: center;
+    width: 247px;
+    margin-top: 20px;
+    margin-left: 19px;
+}
+
+.imageactivites {
+    height: 134px;
+}
+
 /*---------------------------------------------Partie 5 FOOTER--------------------------------------------*/
 
 footer {
     margin-top: 80px;
     margin-left: 0;
     width: 100%;
-    /*375px;*/
-    height: 550px;
+    /*375px*/
+    height: 501px;
     flex-direction: column;
 }
 
 .apropos {
     margin-left: 8%;
     /*30px*/
-
+    margin-bottom: 0;
 }
 
 .noshebergements {

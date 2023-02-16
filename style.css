@@ -32,13 +32,11 @@ nav,
 /*---------------------------------------------------HEADER------------------------------------------------------*/
 header {
    justify-content: space-between;
-   width:92.43%;
    margin-left: 3.82%;
    /*55px;*/
-   margin-right: 3.75%; 
-   /*  3.75%  54px; 77-23  (23=(109-63)/2) */
+   margin-right: 3.75%;
+   /*54px: 77-23  (23=(109-63)/2) */
 }
-
 
 .logo {
    width: 61px;
@@ -53,21 +51,19 @@ header {
 /*--HEADER------NAV--tout à Droite------*/
 nav {
    align-items: center;
-   width:271px; ; /* 271 = 162 + 109 */
-   /*20.72%; /*271px   162 + 109 
-     (109= 186-77) */
+   width: 271px;
+   /*20.72%; /*271px = 162 + 109 (109= 186-77) */
 }
 
 .hebergements {
    justify-content: center;
    align-items: center;
    width: 162px;
-   /*100%;*/
 }
 
 .hebergementmarseille {
+   /*c'est le lien d'hébergements*/
    width: 162px;
-   /*59.78%;*/
    font-weight: 500;
 }
 
@@ -75,15 +71,11 @@ nav {
    justify-content: center;
    align-items: center;
    width: 109px;
-   /*100%; */
 }
 
 nav a {
    width: 109px;
-   /*40.22%;*/
-}
-
-nav a {
+   /*40.22%*/
    text-decoration: none;
    color: black;
    line-height: 19px;
@@ -104,10 +96,14 @@ nav a:hover {
    /*----section FILTRES----*/
    display: flex;
    flex-direction: column;
+   width: 921px;
+   /* 1440-55-464 */
    height: 261px;
    margin-top: 11px;
    margin-left: 3.82%;
+   /* 55px */
    margin-right: 32.22%;
+   /*464*/
 }
 
 h1 {
@@ -157,7 +153,6 @@ h2 {
 .fa-location-dot {
    width: 14px;
    height: 18px;
-   border: 1px solid black;
 }
 
 .form {
@@ -228,10 +223,11 @@ input::placeholder {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 914px;
-   /*99.23%;*/
+   width: 99.23%;
+   /* Largeur totale-right animaux autorisés-left filtres =1440-464-62 = 914px */
    margin-top: 32px;
    margin-left: 0.77%;
+   /*7px */
 }
 
 .filterbar a {
@@ -248,7 +244,7 @@ input::placeholder {
 .ensemblefiltres {
    display: flex;
    justify-content: space-between;
-   width: 828px;
+   width: 90.59%;
    /* 828=914-54-32 */
 }
 
@@ -267,10 +263,16 @@ input::placeholder {
    background-color: #DEEBFF;
 }
 
-.carreicon1 {
+.carreicon1,
+.carreicon2,
+.carreicon3,
+.carreicon4 {
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.carreicon1 {
    width: 22px;
    height: 22px;
    margin-left: 20px;
@@ -278,9 +280,6 @@ input::placeholder {
 }
 
 .carreicon2 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    width: 13.44px;
    height: 22px;
    margin-left: 24px;
@@ -288,9 +287,6 @@ input::placeholder {
 }
 
 .carreicon3 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    width: 22px;
    height: 18.33px;
    margin-left: 20px;
@@ -298,18 +294,11 @@ input::placeholder {
 }
 
 .carreicon4 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
    width: 22px;
    height: 22px;
    margin-left: 20px;
    margin-right: 10px;
 }
-
-
-
-
 
 /* P2  : icon font awesome */
 .fa-info {
@@ -317,27 +306,13 @@ input::placeholder {
    font-size: 10px;
 }
 
-.fa-money-bill-wave {
-   color: #0065FC;
-   font-size: 22px;
-}
-
-.fa-person {
-   color: #0065FC;
-   font-size: 22px;
-}
-
-.fa-heart {
-   color: #0065FC;
-   font-size: 22px;
-}
-
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
 .fa-dog {
    color: #0065FC;
    font-size: 22px;
 }
-
-/* fin P2   : icon font awesome */
 
 .textfiltres {
    margin-right: 20px;
@@ -350,8 +325,7 @@ input::placeholder {
 .infobar {
    display: flex;
    align-items: center;
-   /*width: 99.68%; /* 464px */
-   height: 19px;
+   height: 24px;
    margin-top: 38px;
    margin-left: 0.32%;
    /*4px;*/
@@ -381,25 +355,13 @@ h3 {
    justify-content: space-between;
    align-items: center;
    width: 93.06%;
+   /* 1340 = 1440 - 50 - 50 */
    height: 625px;
    margin-top: 39px;
    margin-left: 3.47%;
+   /*50px*/
    margin-right: 3.47%;
-}
-
-.fa-star {
-   margin-right: 2px;
-   font-size: 12px;
-}
-
-.fa-star:nth-child(-n+4) {
-   /* 4 premières étoiles bleues */
-   color: #0065FC;
-}
-
-.fa-star:nth-child(n+5) {
-   /* dernière étoile grise */
-   color: grey;
+   /*50px*/
 }
 
 /*-----P3---GRANDE SECTION-------- */
@@ -408,6 +370,7 @@ h3 {
    display: flex;
    flex-direction: column;
    width: 65.67%;
+   /*880px */
    height: 626px;
    border-radius: 20px;
    background-color: #F2F2F2;
@@ -416,6 +379,7 @@ h3 {
 .titrehebergements {
    height: 91px;
    margin-left: 4.55%;
+   /*40px*/
 }
 
 h4 {
@@ -430,19 +394,22 @@ h4 {
 .sixcards {
    display: flex;
    flex-wrap: wrap;
-   align-content: space-between;
    justify-content: space-between;
+   align-content: space-between;
    width: 90.91%;
+   /* 800px=880 -40-40 */
    height: 428px;
    /* 199 + 30 + 199 */
    margin-bottom: 30px;
    margin-left: 4.55%;
+   /*40px*/
 }
 
 /* CARTE */
 .sixcards a {
    display: flex;
    width: 30.75%;
+   /* 246px */
 }
 
 .cardmain {
@@ -456,7 +423,6 @@ h4 {
 }
 
 .imagemain {
-   display: flex;
    height: 114px;
    border: 5px solid #FFFFFF;
    border-radius: 20px 20px 0px 0px;
@@ -477,6 +443,7 @@ h4 {
    height: 75px;
    margin-top: 4px;
    margin-left: 6.50%;
+   /*18px*/
 }
 
 .titrecardmain {
@@ -504,8 +471,24 @@ h4 {
    height: 12px;
 }
 
+.fa-star {
+   margin-right: 2px;
+   font-size: 12px;
+}
+
+.fa-star:nth-child(-n+4) {
+   /* 4 premières étoiles bleues */
+   color: #0065FC;
+}
+
+.fa-star:nth-child(n+5) {
+   /* dernière étoile grise */
+   color: grey;
+}
+
 .afficherplus {
    margin-left: 5%;
+   /* 44px */
    margin-bottom: 46px;
    line-height: 21.13px;
    font-size: 18px;
@@ -517,6 +500,7 @@ h4 {
    display: flex;
    flex-direction: column;
    width: 32.31%;
+   /* 420px */
    height: 626px;
    margin-left: 40px;
    border-radius: 20px;
@@ -525,11 +509,12 @@ h4 {
 }
 
 .grostitresponsored {
+   /* pas de marge supérieure et inférieure */
    display: flex;
    justify-content: space-between;
-   align-items: center;
    height: 93px;
    margin-left: 8.81%;
+   /* 37px */
    margin-right: 10%;
 }
 
@@ -551,10 +536,15 @@ h4 {
    flex-direction: column;
    justify-content: space-between;
    width: 81.67%;
-   /*81.67%*   probleme  343px */
+   /* 343px */
    height: 498px;
    /* 144 + 33 + 144 + 33 + 144 */
    margin-left: 8.81%;
+   /* 37px */
+}
+
+.bloccardsponsored a {
+   width: 100%;
 }
 
 .cardsponsored {
@@ -570,8 +560,6 @@ h4 {
 }
 
 .imagesponsored {
-   display: flex;
-   justify-content: center;
    width: 127px;
    height: 134px;
    border: 5px solid #FFFFFF;
@@ -592,6 +580,7 @@ h4 {
    width: 206px;
    height: 132px;
    margin-left: 4.37%;
+   /*15px*/
    padding-bottom: 12px;
 }
 
@@ -622,7 +611,9 @@ h4 {
    height: 493px;
    margin-top: 60px;
    margin-left: 3.47%;
+   /* 50px */
    margin-right: 3.68%;
+   /* 53px */
 }
 
 h5 {
@@ -636,7 +627,6 @@ h5 {
    font-weight: 700;
 }
 
-
 .bloccardactivites {
    display: flex;
    justify-content: space-between;
@@ -646,6 +636,7 @@ h5 {
 .bloccardactivites a {
    display: flex;
    width: 22.59%;
+   /* 302 px */
 }
 
 .cardactivites {
@@ -689,7 +680,9 @@ footer {
    height: 225px;
    margin-top: 61px;
    margin-left: 3.33%;
+   /* 48px */
    margin-right: 3.68%;
+   /* 53px */
    background-color: #F2F2F2;
 }
 
@@ -697,6 +690,7 @@ footer {
    display: flex;
    flex-direction: column;
    margin-left: 5.23%;
+   /* 70px */
    margin-top: 45px;
    margin-bottom: 58px;
 }
@@ -718,7 +712,7 @@ h6 {
 
 .textfooter {
    display: flex;
-   margin-bottom: 12px
+   margin-bottom: 12px;
 }
 
 .noshebergements {
@@ -726,6 +720,7 @@ h6 {
    flex-direction: column;
    margin-top: 45px;
    margin-left: 17.18%;
+   /* 230px */
 }
 
 .assistance {
@@ -733,4 +728,5 @@ h6 {
    flex-direction: column;
    margin-top: 45px;
    margin-left: 17.85%;
+   /* 239px */
 }

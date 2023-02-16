@@ -286,6 +286,11 @@ h4 {
     /*22px*/
 }
 
+h5 {
+    margin-left: 3px;
+
+}
+
 .sectionactivites a {
     width: 100%;
 }
@@ -294,10 +299,12 @@ h4 {
     flex-direction: column;
     height: 832px;
     margin-top: 0;
+    /* width:100%;*/
 }
 
 .cardactivites {
     height: 190px;
+    width: 100%;
 }
 
 .imageactivites img {

@@ -3,8 +3,10 @@ body {
    flex-direction: column;
    max-width: 1400px;
    width: 100%;
-   height: 1884px;
-   margin: 0;
+   height:auto;
+   margin-left:auto;
+   margin-right:auto;
+   margin-top: 0;
    padding: 0;
    font-family: "raleway", sans serif;
 }
@@ -23,10 +25,11 @@ nav a {
    display: flex;
 }
 
+header,
 nav,
 .hebergements,
 .activites {
-   height: 115px;
+   height: 111px;
 }
 
 /*---------------------------------------------------HEADER------------------------------------------------------*/
@@ -57,31 +60,38 @@ nav {
 
 .hebergements {
    justify-content: center;
-   align-items: center;
    width: 162px;
 }
 
-.hebergementmarseille {
-   /*c'est le lien d'hébergements*/
-   width: 162px;
+.texthebergements {
+   margin-top: 46px;
+   /*48-2*/
+   font-size: 16px;
    font-weight: 500;
 }
 
 .activites {
    justify-content: center;
-   align-items: center;
    width: 109px;
+   /* 186-77 */
+}
+
+.textactivites {
+   margin-top: 46px;
+   /*48-2*/
+   font-size: 16px;
+   font-weight: 400;
 }
 
 nav a {
-   width: 109px;
    /*40.22%*/
    text-decoration: none;
    color: black;
-   line-height: 19px;
+   /*line-height: 19px;*/
    font-weight: 400;
    font-size: 16px;
-   border-top: 2px solid #FFFFFF;
+   border-top: 2px solid #f7f9fa;
+   margin-top: 2px;
    /* pas besoin de margin-top 2px pour la nav */
 }
 
@@ -99,7 +109,8 @@ nav a:hover {
    width: 921px;
    /* 1440-55-464 */
    height: 261px;
-   margin-top: 11px;
+   margin-top: 15px;
+   /*126-111*/
    margin-left: 3.82%;
    /* 55px */
    margin-right: 32.22%;
@@ -356,7 +367,7 @@ h3 {
    align-items: center;
    width: 93.06%;
    /* 1340 = 1440 - 50 - 50 */
-   height: 625px;
+   height: 626px;
    margin-top: 39px;
    margin-left: 3.47%;
    /*50px*/

@@ -1,7 +1,5 @@
 body {
     max-width: 992px;
-    height: 2076px;
-    /* 2076px */
 }
 
 /*---l'écran fait 1024px sur la maquette---------------HEADER------------------------------------------------------*/
@@ -107,8 +105,10 @@ header {
     width: 85.94%;
     /* 880px */
     /* 1024-73-73 */
-    margin-left: 73px;
-    /* le bloc est centré */
+    margin-left: 7.13%;
+    /*73px*/
+    margin-right: 7.13%;
+    /*73px*/
 }
 
 h5 {
@@ -141,7 +141,10 @@ h5 {
 /*---------------------------------------------Partie 5 FOOTER--------------------------------------------*/
 footer {
     margin-top: 69px;
-    margin-left: 74px;
+    margin-left: 7.18%;
+    /*73.53px*/
+    margin-right: 6.92%;
+    /* 70.82px;*/
     width: 85.94%;
     /*   880px; */
 }

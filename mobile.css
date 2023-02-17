@@ -1,6 +1,5 @@
 body {
     max-width: 768px;
-    height: 4113px;
 }
 
 .buttonsearch {
@@ -60,6 +59,12 @@ nav a {
 
 nav a:hover {
     border-bottom-color: #0069FC;
+}
+
+.texthebergements,
+.textactivites {
+    margin-top: auto;
+    margin-bottom: 22.84px;
 }
 
 /*---------------------------------------Partie 2 FILTRES--------------------------------------------------*/

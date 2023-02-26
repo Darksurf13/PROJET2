@@ -92,7 +92,6 @@ nav a {
    font-size: 16px;
    border-top: 2px solid #f7f9fa;
    margin-top: 2px;
-   /* pas besoin de margin-top 2px pour la nav */
 }
 
 nav a:hover {
@@ -106,8 +105,8 @@ nav a:hover {
    /*----section FILTRES----*/
    display: flex;
    flex-direction: column;
-   width: 921px;
-   /* 1440-55-464 */
+   width: 63.96%;
+   /* 921px = 1440-55-464 */
    height: 261px;
    margin-top: 15px;
    /*126-111*/
@@ -138,7 +137,7 @@ h2 {
 .blocinput {
    display: flex;
    align-items: center;
-   width: 415px;
+   /* width: 415px; */
    margin-top: 20px;
 }
 
@@ -425,7 +424,7 @@ h4 {
 .sixcards a {
    display: flex;
    width: 30.75%;
-   /* 246px */
+   /*30.75% 246px   */
 }
 
 .cardmain {
@@ -443,7 +442,6 @@ h4 {
    border: 5px solid #FFFFFF;
    border-radius: 20px 20px 0px 0px;
    background-color: #F2F2F2;
-   overflow: hidden;
 }
 
 .imagemain img {
@@ -460,12 +458,14 @@ h4 {
    margin-top: 4px;
    margin-left: 6.50%;
    /*18px*/
+   overflow:hidden;
 }
 
 .titrecardmain {
    line-height: 18.78px;
    font-size: 16px;
    font-weight: 700;
+   width: 172px;
 }
 
 .prixcardmain {
@@ -604,6 +604,7 @@ h4 {
 
 .titresponsoredhotel {
    margin-top: 16px;
+   font-weight: 700;
    width: 130px;
 }
 
@@ -669,6 +670,7 @@ h5 {
    flex-direction: column;
    width: 100%;
    height: 445px;
+   border-radius: 20px;
    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -702,6 +704,7 @@ h5 {
 footer {
    display: flex;
    height: 225px;
+   /*width:92.99%;*/
    margin-top: 61px;
    margin-left: 3.33%;
    /* 48px */
@@ -710,15 +713,26 @@ footer {
    background-color: #F2F2F2;
 }
 
+footer a {
+   width: 197px;
+   height: 19px;
+   margin-bottom: 12px;
+}
+
+.footercolonne {
+   display: flex;
+   width: 33.33%;
+}
+
 .apropos {
    display: flex;
    flex-direction: column;
    width: 197px;
-   margin-left: 5.23%;
+   /* 197px*/
+   margin-left: 15.68%;
    /* 70px */
    margin-top: 45px;
    /*margin-bottom: 58px;*/
-
 }
 
 h6 {
@@ -739,6 +753,9 @@ h6 {
 .textfooter {
    display: flex;
    margin-bottom: 12px;
+   line-height: 19px;
+   font-size: 16px;
+   font-weight: 400;
 }
 
 .noshebergements {
@@ -747,8 +764,8 @@ h6 {
    width: 197px;
    /* et pas 165px*/
    margin-top: 45px;
-   margin-left: 16.98%;
-   /*230-3=227px*/
+   margin-left: 20%;
+   /*au lieu de 18.98% 230-3=227px*/
 }
 
 .assistance {
@@ -756,14 +773,12 @@ h6 {
    flex-direction: column;
    width: 197px;
    margin-top: 45px;
-   margin-left: 15.46%;
-   /* 197-165=32  239-32= 207px */
-   margin-right: 11.95%;
-   /* 197-114= 83  243-83= 160px*/
+   margin-left: 10%;
+   /*au lieu de 15.46% 197-165=32  239-32= 207px */
 }
 
 /*---------------------------------------------------TABLETTE-------991 à 768 px-----------------------------------------------*/
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.99px) {
 
 
    /*---l'écran fait 1024px sur la maquette---------------HEADER------------------------------------------------------*/
@@ -789,16 +804,11 @@ h6 {
    .blocinput {
       margin-left: 2px;
       justify-content: flex-start;
-      /*rajout*/
    }
 
    .filterbar {
       margin-left: 0;
       width: 100%;
-   }
-
-   .filtres {
-      margin-right: 17px;
    }
 
    .infobar {
@@ -811,7 +821,7 @@ h6 {
       justify-content: center;
       align-items: center;
       width: 85.94%;
-      /*93.06%  800px*/
+      /* 800px*/
       height: 957px;
       /* 957 = 626 + 53 + 278 */
       margin-left: 7.03%;
@@ -843,7 +853,7 @@ h6 {
       flex-direction: row;
       width: 90.83%;
       /* 802px */
-      /*252+23+252+23+252 */
+      /*252+23+252+23+252*/
       height: 144px;
       margin-left: 40px;
    }
@@ -855,7 +865,7 @@ h6 {
 
    .cardsponsored {
       width: 100%;
-      /*252px;*/
+      /*252px*/
    }
 
    .cardsponsored a {
@@ -934,34 +944,30 @@ h6 {
       margin-right: 6.92%;
       /* 70.82px;*/
       width: 85.94%;
-      /*   880px; */
+      /* 880px */
    }
 
    .apropos {
-      margin-left: 7.98%;
+      margin-left:22% ;
       /* 70.21px */
    }
 
    .noshebergements {
-      margin-left: 9.23%;
-      /* 81.26px */
+      margin-left: 18%;
+      /* 9.32%81.26px */
    }
 
    .assistance {
-      margin-left: 9.32%;
-      /* 82px */
+      margin-left:5% ;
+      /*9.23% 82px */
    }
 }
 
 /*----------------------------------------------------MOBILE------------------------------------------------------*/
-@media screen and (max-width: 767px) {
-   body {
-      box-sizing: border-box;
-      overflow: hidden;
-   }
 
+@media screen and (max-width:767.99px) {
    .buttonsearch {
-      visibility: hidden;
+      display: none;
    }
 
    header {
@@ -1045,7 +1051,7 @@ h6 {
       margin-left: 2px;
       /* 20px*/
       width: 89%;
-      /*79.47% ;/*298px;  j'ai tatonné*/
+      /*79.47% ;/*298px; j'ai tatonné*/
    }
 
    h2 {
@@ -1053,14 +1059,20 @@ h6 {
    }
 
    .blocinput {
-      margin-left: 0.53%;
+      /*margin-left: 0.53%;*/
       /*2px*/
+      /*margin-right:5.60%;*/
       margin-top: 34px;
+      /*width: 332px; */
+   }
+
+   .inputmainlocation {
       width: 100%;
    }
 
    .form {
-      width: 64.76%;
+      width: 100%;
+      /*64.76%*/
    }
 
    .formulaire {
@@ -1324,6 +1336,10 @@ h6 {
       flex-direction: column;
    }
 
+   .footercolonne {
+      width: 100%;
+   }
+
    .apropos {
       margin-left: 8%;
       /*30px*/
@@ -1331,13 +1347,15 @@ h6 {
    }
 
    .noshebergements {
-      margin-top: 40px;
+      margin-top: 28px;
+      /*40-12*/
       margin-left: 8.80%;
       /*33px*/
    }
 
    .assistance {
-      margin-top: 51px;
+      margin-top: 39px;
+      /*51-12*/
       margin-left: 8.80%;
       /*33px*/
    }

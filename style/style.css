@@ -442,6 +442,7 @@ h4 {
    border: 5px solid #FFFFFF;
    border-radius: 20px 20px 0px 0px;
    background-color: #F2F2F2;
+   overflow: hidden;
 }
 
 .imagemain img {
@@ -458,14 +459,16 @@ h4 {
    margin-top: 4px;
    margin-left: 6.50%;
    /*18px*/
-   overflow:hidden;
 }
 
 .titrecardmain {
    line-height: 18.78px;
    font-size: 16px;
    font-weight: 700;
-   width: 172px;
+   overflow: hidden;
+   display: inline-block;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 }
 
 .prixcardmain {
@@ -732,7 +735,7 @@ footer a {
    margin-left: 15.68%;
    /* 70px */
    margin-top: 45px;
-   /*margin-bottom: 58px;*/
+   /*margin-bottom: 58px*/
 }
 
 h6 {
@@ -948,7 +951,7 @@ h6 {
    }
 
    .apropos {
-      margin-left:22% ;
+      margin-left: 22%;
       /* 70.21px */
    }
 
@@ -958,7 +961,7 @@ h6 {
    }
 
    .assistance {
-      margin-left:5% ;
+      margin-left: 5%;
       /*9.23% 82px */
    }
 }

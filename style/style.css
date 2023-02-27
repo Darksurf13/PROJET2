@@ -87,7 +87,7 @@ nav a {
    /*40.22%*/
    text-decoration: none;
    color: black;
-   /*line-height: 19px;*/
+   /*line-height: 19px*/
    font-weight: 400;
    font-size: 16px;
    border-top: 2px solid #f7f9fa;
@@ -424,7 +424,7 @@ h4 {
 .sixcards a {
    display: flex;
    width: 30.75%;
-   /*30.75% 246px   */
+   /*30.75% 246px*/
 }
 
 .cardmain {

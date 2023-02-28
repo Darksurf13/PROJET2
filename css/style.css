@@ -466,13 +466,15 @@ h4 {
    font-size: 16px;
    font-weight: 700;
    overflow: hidden;
-   display: inline-block;
+   display: block;
    text-overflow: ellipsis;
    white-space: nowrap;
+   margin: 0;
 }
 
 .prixcardmain {
    margin-top: 9px;
+   margin-bottom: 0;
    line-height: 16.44px;
    font-size: 14px;
    font-weight: 400;
@@ -502,7 +504,7 @@ h4 {
 
 .fa-star:nth-child(n+5) {
    /* dernière étoile grise */
-   color: grey;
+   color: #F2F2F2;
 }
 
 .afficherplus {
@@ -607,12 +609,15 @@ h4 {
 
 .titresponsoredhotel {
    margin-top: 16px;
+   margin-bottom: 0;
+   font-size: 16px;
    font-weight: 700;
    width: 130px;
 }
 
 .titresponsored {
    margin-top: 16px;
+   margin-bottom: 0;
    line-height: 19px;
    font-size: 16px;
    font-weight: 700;
@@ -621,6 +626,7 @@ h4 {
 
 .prixsponsored {
    margin-top: 7px;
+   margin-bottom: 0;
    line-height: 16.44px;
    font-size: 14px;
    font-weight: 400;
@@ -645,8 +651,8 @@ h4 {
    /* 53px */
 }
 
-h5 {
-   /* Activités à Marseille */
+.titresectionactivite {
+   /*h5 Activités à Marseille */
    display: flex;
    height: 30.02px;
    margin-top: 0;
@@ -701,6 +707,7 @@ h5 {
    line-height: 19px;
    font-size: 16px;
    font-weight: 700;
+   margin-bottom: 0;
 }
 
 /*---------------------------------------------Partie 5 FOOTER------------desktop--------------------------------*/
@@ -781,7 +788,7 @@ h6 {
 }
 
 /*---------------------------------------------------TABLETTE-------991 à 768 px-----------------------------------------------*/
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991px) {
 
 
    /*---l'écran fait 1024px sur la maquette---------------HEADER------------------------------------------------------*/
@@ -912,7 +919,7 @@ h6 {
       /*73px*/
    }
 
-   h5 {
+   .titresectionactivite {
       /* Activités à Marseille */
       margin-bottom: 34px;
    }
@@ -968,7 +975,7 @@ h6 {
 
 /*----------------------------------------------------MOBILE------------------------------------------------------*/
 
-@media screen and (max-width:767.99px) {
+@media screen and (max-width:767px) {
    .buttonsearch {
       display: none;
    }
@@ -1194,6 +1201,7 @@ h6 {
       /*375px*/
       height: 580px;
       /*700px*/
+      border-radius: 0;
    }
 
    .grostitresponsored {
@@ -1282,7 +1290,7 @@ h6 {
       /*22px*/
    }
 
-   h5 {
+   .titresectionactivite {
       margin-left: 3px;
 
    }
@@ -1307,7 +1315,7 @@ h6 {
       height: 134px;
    }
 
-   h5 {
+   .titresectionactivite {
       width: 120px;
       height: 54px;
       /* 30.02 + 23.98 */
